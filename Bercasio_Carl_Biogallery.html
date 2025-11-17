@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bercasio, Carl Richard A. — Bio & Gallery</title>
+  <style>
+    :root{
+      --bg:#9dc1e6; --card:#97f0eb; --accent:#2563eb; --muted:#6b7280; --shadow:0 6px 18px rgba(238, 239, 241, 0.06);
+      --radius:12px; --max-width:980px;
+    }
+    *{box-sizing:border-box}
+    body{font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:var(--bg); color:#0f172a; margin:24px; display:flex; justify-content:center}
+    .wrap{width:100%; max-width:var(--max-width)}
+    header{display:flex; gap:18px; align-items:center; margin-bottom:18px}
+    .avatar{width:120px; height:120px; border-radius:16px; background:linear-gradient(135deg,#060d14,#2563eb); display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:28px; box-shadow:var(--shadow)}
+    .headline{flex:1}
+    h1{margin:0; font-size:22px}
+    p.role{margin:6px 0 0; color:var(--muted)}
+
+    .card{background:var(--card); padding:18px; border-radius:var(--radius); box-shadow:var(--shadow)}
+    .two-col{display:grid; grid-template-columns: 1fr 420px; gap:18px}
+    @media (max-width:920px){.two-col{grid-template-columns:1fr;}}
+
+    .bio h2{margin-top:0}
+    .meta{display:flex; gap:12px; flex-wrap:wrap; margin:8px 0}
+    .meta span{background:#ee22ee; color:#ffffff; padding:6px 10px; border-radius:999px; font-size:13px}
+
+    /* gallery */
+    .gallery-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:8px}
+    @media (max-width:480px){.gallery-grid{grid-template-columns:repeat(2,1fr);}}
+    .thumb{border-radius:8px; overflow:hidden; cursor:pointer; border:1px solid rgba(2,6,23,0.06)}
+    .thumb img{width:100%; height:120px; object-fit:cover; display:block}
+
+    /* modal */
+    .modal{position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(2,6,23,0.55); z-index:60}
+    .modal.open{display:flex}
+    .modal-content{max-width:90%; max-height:90%; background:transparent}
+    .modal-content img{width:auto; max-width:100%; max-height:90vh; border-radius:10px}
+    .modal-close{position:fixed; top:20px; right:20px; background:rgba(255,255,255,0.06); border:0; color:#fff; font-size:22px}
+
+    /* design explanation */
+    .explain{font-size:14px; color:var(--muted); margin-top:12px}
+    .explain b{color:#0f172a}
+
+    footer{margin-top:12px; color:var(--muted); font-size:13px; text-align:right}
+    .btn{display:inline-block; background:var(--accent); color:#110505; padding:8px 12px; border-radius:8px; text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+        <img src="C:\Users\Berc's\Desktop\Caloiskee\profile.jpg" alt="My Avatar" class="avatar">
+        <div class="headline">
+        <h1>Bercasio, Carl Richard A.</h1> <p>
+        <div class="role">• Admin Officer at St. michael archangel college <p> • 1st year ACT student at Naga College Foundation <p> • Loyal Lover(ayiee)</div>
+        <div class="meta">
+          <span>from Cararayan Naga City</span>
+          <span>Not for HIRE</span>
+          <span>Just for fun</span>
+        </div>
+      </div>
+      <div style="text-align:right">
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <div class="two-col">
+      <div class="card bio">
+        <h2>"Caloiskee"</h2>
+        <p>35y/o, I'm good at making people laugh, even in crirical situations, and i can get along with other people, even if i'm new to them.
+        just sit back and relax, pop your popcorn and take a sip on a can of soda.</p>
+        <h3>Interesting part</h3>
+        <ul>
+          <li>Always Available in all occations, especially in hanging-out</li>
+          <li>Not for sale to Minors</li>
+          <li>You can Ask anything except my Personal Life(mind your own.. LOL!) </li>
+        </ul>
+
+        <h3 id="contact">Contact</h3>
+        <p>Email: <a href="mailto:loica2188@gmail.com">Loica2188@gmail.com</a></p>
+        <p>Website: <a href="#">www.WEBNOTAVAILABLE.com</a></p>
+
+       
+
+      <aside>
+        <div class="card">
+          <h3>Photo Gallery</h3>
+          <div class="gallery-grid" id="gallery">
+            <!-- thumbnails use inline SVG placeholders. Replace src with real images. -->
+            <div class="thumb" data-full="C:\Users\Berc's\Desktop\Caloiskee\80452834_1135092130215528_2967825382243303424_n.jpg"><img src="C:\Users\Berc's\Desktop\Caloiskee\80452834_1135092130215528_2967825382243303424_n.jpg" alt="Image 1"></div>
+            <div class="thumb" data-full="C:\Users\Berc's\Desktop\Caloiskee\Otobicolano family.jpg"><img src="C:\Users\Berc's\Desktop\Caloiskee\Otobicolano family.jpg" alt="Image 2"></div>
+            <div class="thumb" data-full="C:\Users\Berc's\Desktop\Caloiskee\Kolping comercial cooking.jpg"><img src="C:\Users\Berc's\Desktop\Caloiskee\Kolping comercial cooking.jpg" alt="Image 3"></div>
+            <div class="thumb" data-full="C:\Users\Berc's\Desktop\Caloiskee\mariners int'l cuisine course.jpg"><img src="C:\Users\Berc's\Desktop\Caloiskee\mariners int'l cuisine course.jpg" alt="Image 4"></div>
+            <div class="thumb" data-full="C:\Users\Berc's\Desktop\Caloiskee\49496949_2922179811132846_7685445875673333760_n.jpg"><img src="C:\Users\Berc's\Desktop\Caloiskee\49496949_2922179811132846_7685445875673333760_n.jpg" alt="Image 5"></div>
+            <div class="thumb" data-full="C:\Users\Berc's\Desktop\Caloiskee\kids.jpg"><img src="C:\Users\Berc's\Desktop\Caloiskee\kids.jpg" alt="Image 6"></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+  <!-- modal for viewing full image -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+
+  <script>
+    // Simple gallery modal behavior
+    document.querySelectorAll('.thumb').forEach(el => {
+      el.addEventListener('click', () => {
+        const full = el.getAttribute('data-full');
+        const modal = document.getElementById('modal');
+        const content = document.getElementById('modalContent');
+        content.innerHTML = '<img src="'+full+'" alt="Full image">';
+        modal.classList.add('open');
+        modal.setAttribute('aria-hidden','false');
+      });
+    });
+    document.getElementById('modal').addEventListener('click', (e)=>{
+      if(e.target.id === 'modal' || e.target.id === 'modalClose'){
+        e.currentTarget.classList.remove('open');
+        e.currentTarget.setAttribute('aria-hidden','true');
+        document.getElementById('modalContent').innerHTML = '';
+      }
+    });
+    document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape'){ document.getElementById('modal').classList.remove('open'); }});
+  </script>
+</body>
+</html>
